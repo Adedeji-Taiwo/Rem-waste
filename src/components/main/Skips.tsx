@@ -9,7 +9,7 @@ import SkipPopUp from "../common/SkipPopUp";
 
 
 const Skips = () => {
-  const {setSelectedSkip} = useContext(RemContext) as RemContextType
+  const { setSelectedSkip} = useContext(RemContext) as RemContextType
   const { data, loading, error } = useFetch(import.meta.env.VITE_HOST_BASE_URL, "GET");
 
 

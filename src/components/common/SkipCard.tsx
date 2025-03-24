@@ -4,8 +4,9 @@ import Button from "./Button";
 import { SkipImg } from "../../assets";
 
 
+
 const SkipCard = ({size,forbidden, allows_heavy_waste, hire_period_days, price_before_vat, onSelect }: DetailsType) => {
- 
+  
   const handleSkipSelection = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!forbidden && !allows_heavy_waste) {
       e.stopPropagation();
