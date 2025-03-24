@@ -29,6 +29,10 @@ export default {
       animation: {
         "fade-in": "fade-in 0.9s ease-out forwards",
       },
+      screens: {
+        xx: "320px",
+        xs: "400px",
+      },
     },
   },
   plugins: [],
