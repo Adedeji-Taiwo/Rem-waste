@@ -66,13 +66,13 @@ const SkipCard = ({size,forbidden, allows_heavy_waste, hire_period_days, price_b
       
         <Button
           type="button"
-          className={`min-w-full h-14 text-lg font-semibold tracking-wider mt-6 before:bg-primary ${
+          className={`min-w-full h-14 text-lg font-semibold tracking-wider mt-6 ${
             !forbidden && !allows_heavy_waste
-              ? "text-gray-600 cursor-not-allowed pointer-events-none"
-              : "hover:shadow-2xl"
+              ? "before:bg-green-700 cursor-not-allowed pointer-events-none"
+              : "hover:shadow-2xl before:bg-primary"
           }`}
           onClick={() => {}}
-          children={<span className={`relative md:text-lg text-base font-semibold text-white`}>{forbidden || !allows_heavy_waste ? "Unavailable" : "Select this Skip"}</span>}
+          children={<span className={`${forbidden || !allows_heavy_waste && "text-gray-600"} relative md:text-lg text-base font-semibold text-white`}>{forbidden || !allows_heavy_waste ? "Unavailable" : "Select this Skip"}</span>}
         />
        
     

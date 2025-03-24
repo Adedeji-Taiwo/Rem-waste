@@ -12,7 +12,7 @@ const Steps = () => {
             <p className='w-full xl:min-w-full lg:min-w-[170px] min-w-[150px] flex items-center lg:gap-6 gap-4'>
                 {icon}
                 <span className={`lg:font-extrabold font-bold xl:text-base text-sm transition`}>{name}</span>
-                {status === "completed" ? (<IoCheckmark className="ml-auto" />) : status === "in-progress" ? (<HiOutlineArrowLongRight className="ml-auto" />) : ""}
+                {status === "completed" ? (<IoCheckmark className="ml-auto" />) : status === "in-progress" ? (<HiOutlineArrowLongRight className="ml-auto md:block hidden" />) : ""}
             </p>
           </div>
         ))}
