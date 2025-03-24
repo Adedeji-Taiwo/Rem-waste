@@ -34,14 +34,14 @@ const SkipCard = ({size,forbidden, allows_heavy_waste, hire_period_days, price_b
           {price_before_vat > 420 && (
             <div className="flex items-center justify-center gap-2 bg-gray-700 bg-opacity-40 rounded-lg py-1 px-3 z-10">
               <FaInfoCircle className="h-4 w-4 text-gray-600 dark:text-yellow-400" />
-              <p className="font-bold text-yellow-400 lg:text-sm text-xs opacity-90 dark:text-yellow-300">Private Property Only</p>
+              <p className="font-extrabold text-yellow-400 lg:text-sm text-xs opacity-90 dark:text-yellow-300">Private Property Only</p>
             </div>
           )}
 
           {!allows_heavy_waste && (
             <div className="flex items-center justify-center gap-2 bg-gray-700 bg-opacity-40 rounded-lg py-1 px-3 mt-1 z-10">
               <FaInfoCircle className="h-4 w-4 text-gray-600 dark:text-rose-400" />
-              <p className="font-bold text-rose-600 lg:text-sm text-xs opacity-90 dark:text-rose-400">Not Suitable for Heavy Waste</p>
+              <p className="font-extrabold text-rose-600 lg:text-sm text-xs opacity-90 dark:text-rose-400">Not Suitable for Heavy Waste</p>
             </div>
           )}
         </div>
