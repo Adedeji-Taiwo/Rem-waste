@@ -9,7 +9,7 @@ const SkipPopUp = () => {
   return (
     <>
        {selectedSkip && (
-        <div className="fixed top-10 left-1/2 transform -translate-x-1/2 bg-white dark:bg-gray-800 bg-gradient-to-t from-black/10 to-transparent shadow-2xl p-6 rounded-xl sm:w-96 w-80 text-center z-50 animate-fade-in">
+        <div className="fixed top-10 left-1/2 transform -translate-x-1/2 bg-white dark:bg-gray-800 bg-gradient-to-t from-black/10 to-transparent shadow-2xl p-6 rounded-xl sm:w-96 w-[350px] text-center z-50 animate-fade-in">
           <h3 className="xl:text-3xl lg:text-2xl text-xl font-bold text-gray-800 dark:text-white tracking-wide text-center">
            {selectedSkip.size} Yard Skip
          </h3>
