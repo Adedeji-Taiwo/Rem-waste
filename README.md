@@ -1,54 +1,50 @@
-# React + TypeScript + Vite
+# REMwaste
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**REMwaste: Reliable and eco-friendly waste skip hire service, offering flexible solutions for efficient waste disposal.**
 
-Currently, two official plugins are available:
+## Overview
+REMwaste is a React TypeScript app designed to streamline waste skip hire services by providing users with an intuitive platform to browse, select, and book skips based on their waste disposal needs. It features dynamic pricing, real-time availability, and a user-friendly interface optimized for seamless interaction across devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was bootstrapped with Vite.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Screenshot
+![Screenshot 1](/src//assets/screenshots/image1.png)  
+![Screenshot 2](/src/assets/screenshots/image2.png)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Link
+- Live link: [REMwaste](https://rem-wastes.vercel.app/)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## Features
+- **Seamless Skip Booking**: Easily browse, select, and hire skips based on waste type and disposal needs.
+- **Dynamic Pricing & Availability**: Get real-time pricing updates and availability for efficient waste management.
+- **Mobile-Friendly Experience**: Optimized UI for smooth navigation across all devices.
+
+---
+
+## Third Party Libraries Used
+Below are the third-party libraries used in this project:
+
+| Feature                  | Package               | Benefits                                                                 |
+|--------------------------|-----------------------|-------------------------------------------------------------------------|
+| React                    | `react`              | A JavaScript library for building user interfaces.                     |
+| TypeScript               | `typescript`         | A superset of JavaScript that adds static type definitions.            |
+| React Toogle Dark Mode          | `react-toggle-dark-mode`    | A React component for implementing dark mode toggling.      |
+| Axios          | `axios`    | A promise-based HTTP client for making API requests in JavaScript.     |
+| React Icons          | `react-icons`    | A library providing popular icon sets as React components.      |
+| TailwindCSS              | `tailwindcss`        | A utility-first CSS framework for rapidly building custom designs.     |
+
+---
+
+## Setup
+1. **Clone the repository**:  
+   `git clone https://github.com/your-username/Rem-waste.git`
+2. **Install dependencies using** `npm install`.
+3. **Start the development server**:
+   `npm run dev`
