@@ -1,0 +1,1 @@
+export {default as SkipImg} from './skip.png'
